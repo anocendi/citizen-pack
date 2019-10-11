@@ -61,7 +61,7 @@
     masked: no
     state: started
 
-- name: "Install pip2 docker packages"
+- name: "Install pip2 packages"
   pip:
     name: "{{ pippkgs }}"
     executable: pip2
@@ -73,7 +73,7 @@
       - docker-compose
       - PyYAML 
 
-- name: "Install pip3 docker packages"
+- name: "Install pip3 packages"
   pip:
     name: "{{ pippkgs }}"
     executable: pip3
